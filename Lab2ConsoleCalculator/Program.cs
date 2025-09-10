@@ -65,7 +65,6 @@ class Program
                 try
                 {
                     result = calculator.DoOperation(cleanNum1, cleanNum2, op);
-                    //result = CalculatorLibrary.CalculatorLibrary.DoOperation(cleanNum1, cleanNum2, op);
                     if (double.IsNaN(result))
                     {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
@@ -85,6 +84,7 @@ class Program
 
             Console.WriteLine("\n"); // Friendly linespacing.
         }
+        calculator.Finish();
         return;
     }
 }
