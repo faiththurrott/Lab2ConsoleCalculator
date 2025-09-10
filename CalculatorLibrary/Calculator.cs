@@ -49,8 +49,15 @@ namespace CalculatorLibrary
                         writer.WriteValue("Divide");
                         }
                         break;
-                    // Return text for an incorrect option entry.
-                    default:
+                case "q":
+                    if (num1 >= 0)
+                    {
+                        result = Math.Sqrt(num1);
+                        writer.WriteValue("SquareRoot");
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
                         break;
                 }
                 writer.WritePropertyName("Result");
